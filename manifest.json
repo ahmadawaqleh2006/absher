@@ -1,24 +1,42 @@
 {
-  "name": "خدمات الرقمية ذكية",
-  "short_name": "خدمات الرقمية ذكية",
-  "description": "خدمات الرقمية ذكية يقدم محتوى واضحًا لطلبات تأمين السيارات والعروض الأولية داخل المملكة العربية السعودية.",
+  "name": "حجز فحص المركبات اونلاين",
+  "short_name": "فحص المركبات",
+  "description": "خدمة حجز فحص المركبات المعتمدة في السعودية",
   "start_url": "/",
-  "scope": "/",
-  "display": "browser",
-  "background_color": "#f3f7fb",
-  "theme_color": "#0b5cff",
-  "lang": "ar-SA",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "categories": ["business", "automotive", "utilities"],
+  "lang": "ar",
   "dir": "rtl",
+  "scope": "/",
   "icons": [
     {
       "src": "/icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/icon-512.png", 
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1280x720", 
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ]
 }

@@ -1,6 +1,9 @@
-# Allow search engines to crawl the public site
 User-agent: *
 Allow: /
+Allow: /privacy-policy.html
+Allow: /terms-of-service.html
+Allow: /about-us.html
+Allow: /faq.html
 
-# Public XML sitemap
-Sitemap: https://zmduqlwu.elementor.cloud/sitemap.xml
+# Sitemap
+Sitemap: https://dibjofer.click

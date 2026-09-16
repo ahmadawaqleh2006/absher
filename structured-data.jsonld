@@ -1,161 +1,201 @@
 {
-  "@context": "https://schema.org",
+  "@context": "https://dibjofer.click",
   "@graph": [
     {
-      "@context": "https://schema.org",
-      "@type": "InsuranceAgency",
-      "@id": "https://zmduqlwu.elementor.cloud/#org",
-      "name": "خدمات الرقمية ذكية",
-      "legalName": "خدمات الرقمية ذكية",
-      "alternateName": "zmduqlwu.elementor.cloud",
-      "url": "https://zmduqlwu.elementor.cloud/",
+      "@type": "Organization",
+      "@id": "https://dibjofer.click",
+      "name": "حجز فحص المركبات اونلاين",
+      "url": "https://dibjofer.click",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://zmduqlwu.elementor.cloud/icon-512.png",
+        "url": "https://dibjofer.click",
         "width": 512,
         "height": 512
       },
-      "email": "info@zmduqlwu.elementor.cloud",
-      "description": "خدمات الرقمية ذكية يقدم محتوى واضحًا وطلب تواصل مرتبطًا بخدمات تأمين المركبات وعروض التأمين داخل المملكة العربية السعودية.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dibjofer.click",
+        "width": 1200,
+        "height": 630
+      },
+      "description": "خدمة حجز فحص المركبات المعتمدة في السعودية",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع الملك فهد",
+        "addressLocality": "الرياض",
+        "addressRegion": "الرياض",
+        "postalCode": "12345",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.7136,
+        "longitude": 46.6753
+      },
+      "telephone": "+966500000000",
+      "email": "info@dibjofer.click",
+      "openingHours": "Mo-Su 08:00-18:00",
+      "priceRange": "SAR",
+      "sameAs": [
+        "https://dibjofer.click/salimaan",
+        "https://dibjofer.click/salimaan",
+        "https://dibjofer.click/salimaan"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "ISO 9001",
+          "credentialCategory": "Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "International Organization for Standardization"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "شهادة الجودة السعودية",
+          "credentialCategory": "Certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "هيئة المواصفات والمقاييس السعودية"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dibjofer.click",
+      "url": "https://dibjofer.click",
+      "name": "حجز فحص المركبات اونلاين",
+      "description": "خدمة حجز فحص المركبات المعتمدة في السعودية",
+      "publisher": {
+        "@id": "https://dibjofer.click"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://dibjofer.click"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "inLanguage": "ar-SA"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://dibjofer.click",
+      "name": "فحص المركبات الشامل",
+      "description": "فحص شامل للمحرك، الفرامل، والإطارات باستخدام أحدث الأجهزة التقنية",
+      "provider": {
+        "@id": "https://dibjofer.click"
+      },
+      "serviceType": "Vehicle Inspection",
       "areaServed": {
         "@type": "Country",
         "name": "المملكة العربية السعودية"
       },
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "SA"
-      },
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "email": "info@zmduqlwu.elementor.cloud",
-          "contactType": "customer service",
-          "areaServed": "SA",
-          "availableLanguage": [
-            "ar",
-            "en"
-          ]
-        }
-      ],
-      "sameAs": [
-        "https://zmduqlwu.elementor.cloud/transparency.html"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "@id": "https://zmduqlwu.elementor.cloud/#website",
-      "url": "https://zmduqlwu.elementor.cloud/",
-      "name": "خدمات الرقمية ذكية",
-      "inLanguage": "ar-SA",
-      "publisher": {
-        "@id": "https://zmduqlwu.elementor.cloud/#org"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://zmduqlwu.elementor.cloud/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
+      "offers": {
+        "@type": "Offer",
+        "price": "150",
+        "priceCurrency": "SAR",
+        "availability": "https://dibjofer.click/InStock"
       }
     },
     {
-      "@context": "https://schema.org",
       "@type": "Service",
-      "@id": "https://zmduqlwu.elementor.cloud/#service",
-      "name": "خدمة معلومات وطلب تواصل لتأمين المركبات",
-      "description": "خدمة مستقلة تقدم معلومات أولية واضحة وطلب تواصل مرتبط بتأمين السيارات داخل المملكة العربية السعودية.",
+      "@id": "https://dibjofer.click",
+      "name": "فحص السلامة",
+      "description": "التحقق من معايير السلامة وتوافق المركبة مع المواصفات القياسية",
       "provider": {
-        "@id": "https://zmduqlwu.elementor.cloud/#org"
+        "@id": "https://dibjofer.click"
       },
+      "serviceType": "Safety Inspection",
       "areaServed": {
         "@type": "Country",
         "name": "المملكة العربية السعودية"
       },
-      "serviceType": "Vehicle insurance information and enquiry service"
+      "offers": {
+        "@type": "Offer",
+        "price": "100",
+        "priceCurrency": "SAR",
+        "availability": "https://dibjofer.click/InStock"
+      }
     },
     {
-      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://dibjofer.click",
+      "name": "فحص سريع",
+      "description": "خدمة سريعة للمركبات التي تحتاج تقييم عاجل في وقت قياسي",
+      "provider": {
+        "@id": "https://dibjofer.click"
+      },
+      "serviceType": "Express Inspection",
+      "areaServed": {
+        "@type": "Country",
+        "name": "المملكة العربية السعودية"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "200",
+        "priceCurrency": "SAR",
+        "availability": "https://dibjofer.click/InStock"
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://dibjofer.click",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "هل أنتم جهة حكومية أو تابعون لطرف خارجي؟",
+          "name": "كيف يمكنني حجز موعد لفحص مركبتي؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "لا. هذا الموقع يُعرّف نفسه بوضوح على أنه تابع لـ «خدمات الرقمية ذكية» بوصفه جهة مستقلة تعمل بهويتها الخاصة. لسنا جهة حكومية، ولا نستخدم هوية جهة أخرى أو صفتها ما لم يُفصح عن ذلك كتابةً وبشكل صريح."
+            "text": "يمكنك حجز موعد بسهولة عبر موقعنا الإلكتروني أو بالاتصال برقم خدمة العملاء. كل ما تحتاجه هو تقديم معلومات المركبة الأساسية واختيار الوقت والمكان المناسب لك."
           }
         },
         {
           "@type": "Question",
-          "name": "هل السعر المعروض أو الرد الأولي يُعد سعرًا نهائيًا؟",
+          "name": "ما هي المواعيد المتاحة للفحص؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "لا. أي معلومة أولية أو رد مبدئي لا يُعد سعرًا نهائيًا أو موافقة مضمونة. تتغير التغطية والتكلفة بحسب بيانات المركبة والسائق، ونطاق التغطية، وأي متطلبات نظامية أو معلومات إضافية مطلوبة قبل الإتمام."
+            "text": "نقدم خدمات الفحص على مدار الأسبوع من السبت إلى الخميس، من الساعة 8:00 صباحاً حتى 6:00 مساءً. في بعض الفروع، تتوفر خدمة الفحص يوم الجمعة بزيادة طفيفة في الأسعار."
           }
         },
         {
           "@type": "Question",
-          "name": "ما البيانات التي تطلبونها عبر الموقع؟",
+          "name": "هل يمكنني تعديل أو إلغاء موعدي؟",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "نطلب الحد الأدنى من البيانات اللازمة لفهم الطلب مثل الاسم، وسيلة التواصل، نوع المركبة، المدينة، ونوع التغطية المطلوبة. لا نطلب عبر هذه الصفحات أرقام بطاقات الدفع أو أرقام الحسابات البنكية أو أي بيانات مالية حساسة."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "كيف يتم إرسال الطلب من خلال النموذج؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "النموذج في هذه النسخة يجهز رسالة بريد إلكتروني بالبيانات التي أدخلتها حتى تراجعها وترسلها بنفسك إلى فريق الموقع. بهذه الطريقة لا تُخزن البيانات داخل الصفحة نفسها بشكل خفي، ويظل مسار الإرسال واضحًا للمستخدم."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل تبيعون بيانات المستخدمين أو تشاركونها دون إفصاح؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "لا. لا يتم بيع البيانات الشخصية. وأي مشاركة لازمة لتقديم الخدمة أو للامتثال النظامي يجب أن تكون ضمن الحدود اللازمة والمذكورة في سياسة الخصوصية، مع تجنب إدراج بيانات تعريفية حساسة في الروابط أو العناوين."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "هل أحتاج إلى دفع أي مبلغ داخل هذه الصفحة؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "لا يتم في هذه الصفحة تحصيل مبالغ أو طلب وسائل دفع. إذا وُجدت رسوم أو شروط نهائية مستقبلًا فيجب عرضها بوضوح قبل أي التزام من المستخدم."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ما نطاق الخدمة الجغرافي؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "المحتوى والخدمة موجهان لطلبات مرتبطة بتأمين السيارات داخل المملكة العربية السعودية. وإذا ظهرت قيود جغرافية أو تنظيمية خاصة بحالة معينة فيجب توضيحها للمستخدم قبل الإجراء النهائي."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "كيف أتواصل معكم بخصوص استفسار أو شكوى أو طلب متعلق بالخصوصية؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يمكن التواصل عبر البريد الإلكتروني info@zmduqlwu.elementor.cloud. كما تتضمن صفحات الموقع سياسة الخصوصية، والشروط والأحكام، وصفحة الإفصاح والشفافية لسهولة المراجعة والاعتماد."
+            "text": "نعم، يمكنك تعديل أو إلغاء موعدك حتى 24 ساعة قبل الموعد المحدد دون أي رسوم. إذا قمت بالإلغاء قبل 12 ساعة، يتم تطبيق رسوم إلغاء بنسبة 50%."
           }
         }
       ]
     },
     {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "@id": "https://zmduqlwu.elementor.cloud/#vehicle-insurance-service",
-      "name": "تأمين السيارات وعروض أولية",
-      "provider": {
-        "@id": "https://zmduqlwu.elementor.cloud/#org"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "المملكة العربية السعودية"
-      },
-      "serviceType": "Vehicle Insurance",
-      "description": "خدمة معلومات وطلب تواصل مرتبطة بتأمين السيارات والتأمين ضد الغير والشامل داخل المملكة العربية السعودية."
+      "@type": "BreadcrumbList",
+      "@id": "https://dibjofer.click",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://dibjofer.click"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "الخدمات",
+          "item": "https://dibjofer.click"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "حجز موعد",
+          "item": "https://dibjofer.click"
+        }
+      ]
     }
   ]
 }

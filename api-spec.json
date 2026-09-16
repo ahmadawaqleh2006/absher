@@ -1,0 +1,81 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "حجز فحص المركبات اونلاين API",
+    "description": "واجهة برمجة التطبيقات لخدمة حجز فحص المركبات",
+    "version": "1.0.0",
+    "contact": {
+      "name": "فريق الدعم",
+      "email": "info@dibjofer.click",
+      "url": "https://dibjofer.click"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://dibjofer.click",
+      "description": "خادم الإنتاج"
+    }
+  ],
+  "paths": {
+    "/bookings": {
+      "post": {
+        "summary": "حجز موعد فحص",
+        "description": "إنشاء حجز جديد لفحص المركبة",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Booking"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "تم إنشاء الحجز بنجاح",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookingResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Booking": {
+        "type": "object",
+        "required": ["vehicleType", "date", "time", "customerName", "phone"],
+        "properties": {
+          "vehicleType": {
+            "type": "string",
+            "description": "نوع المركبة"
+          },
+          "date": {
+            "type": "string",
+            "format": "date",
+            "description": "تاريخ الحجز"
+          },
+          "time": {
+            "type": "string",
+            "format": "time",
+            "description": "وقت الحجز"
+          },
+          "customerName": {
+            "type": "string",
+            "description": "اسم العميل"
+          },
+          "phone": {
+            "type": "string",
+            "description": "رقم هاتف العميل"
+          }
+        }
+      }
+    }
+  }
+}
