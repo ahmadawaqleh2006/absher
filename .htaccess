@@ -1,0 +1,80 @@
+Options -Indexes
+DirectoryIndex index.html
+AddDefaultCharset UTF-8
+AddType application/xml .xml
+AddType text/plain .txt
+
+# Canonical host and HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.cmcpbitriuch\.click$ [NC]
+RewriteRule ^ https://zmduqlwu.elementor.cloud%{REQUEST_URI} [L,R=301]
+RewriteRule ^index\.html$ https://zmduqlwu.elementor.cloud/ [L,R=301]
+RewriteRule ^terms-of-service\.html$ https://zmduqlwu.elementor.cloud/terms-and-conditions.html [L,R=301]
+
+# Explicit content types for crawler-facing files
+<Files "sitemap.xml">
+  ForceType application/xml
+  <IfModule mod_headers.c>
+    Header set Content-Type "application/xml; charset=UTF-8"
+  </IfModule>
+</Files>
+
+<Files "robots.txt">
+  ForceType text/plain
+  <IfModule mod_headers.c>
+    Header set Content-Type "text/plain; charset=UTF-8"
+  </IfModule>
+</Files>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+  Header always set Cross-Origin-Resource-Policy "same-origin"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'self'; upgrade-insecure-requests"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/css application/javascript application/json application/ld+json image/svg+xml application/xml text/xml
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/plain text/html text/css application/javascript application/json application/ld+json image/svg+xml application/xml text/xml
+</IfModule>
+
+# Browser caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/json "access plus 1 day"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType application/xml "access plus 1 day"
+  ExpiresDefault "access plus 2 days"
+</IfModule>
+
+<FilesMatch "\.(css|js|png|jpg|jpeg|webp|ico|svg)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|xml|json|txt)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
+
+# Custom errors
+ErrorDocument 404 /error-404.html
+FileETag MTime Size

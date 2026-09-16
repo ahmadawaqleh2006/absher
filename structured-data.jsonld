@@ -1,0 +1,161 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceAgency",
+      "@id": "https://zmduqlwu.elementor.cloud/#org",
+      "name": "خدمات الرقمية ذكية",
+      "legalName": "خدمات الرقمية ذكية",
+      "alternateName": "zmduqlwu.elementor.cloud",
+      "url": "https://zmduqlwu.elementor.cloud/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://zmduqlwu.elementor.cloud/icon-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "email": "info@zmduqlwu.elementor.cloud",
+      "description": "خدمات الرقمية ذكية يقدم محتوى واضحًا وطلب تواصل مرتبطًا بخدمات تأمين المركبات وعروض التأمين داخل المملكة العربية السعودية.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "المملكة العربية السعودية"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SA"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "info@zmduqlwu.elementor.cloud",
+          "contactType": "customer service",
+          "areaServed": "SA",
+          "availableLanguage": [
+            "ar",
+            "en"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://zmduqlwu.elementor.cloud/transparency.html"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://zmduqlwu.elementor.cloud/#website",
+      "url": "https://zmduqlwu.elementor.cloud/",
+      "name": "خدمات الرقمية ذكية",
+      "inLanguage": "ar-SA",
+      "publisher": {
+        "@id": "https://zmduqlwu.elementor.cloud/#org"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://zmduqlwu.elementor.cloud/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://zmduqlwu.elementor.cloud/#service",
+      "name": "خدمة معلومات وطلب تواصل لتأمين المركبات",
+      "description": "خدمة مستقلة تقدم معلومات أولية واضحة وطلب تواصل مرتبط بتأمين السيارات داخل المملكة العربية السعودية.",
+      "provider": {
+        "@id": "https://zmduqlwu.elementor.cloud/#org"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "المملكة العربية السعودية"
+      },
+      "serviceType": "Vehicle insurance information and enquiry service"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "هل أنتم جهة حكومية أو تابعون لطرف خارجي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. هذا الموقع يُعرّف نفسه بوضوح على أنه تابع لـ «خدمات الرقمية ذكية» بوصفه جهة مستقلة تعمل بهويتها الخاصة. لسنا جهة حكومية، ولا نستخدم هوية جهة أخرى أو صفتها ما لم يُفصح عن ذلك كتابةً وبشكل صريح."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل السعر المعروض أو الرد الأولي يُعد سعرًا نهائيًا؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. أي معلومة أولية أو رد مبدئي لا يُعد سعرًا نهائيًا أو موافقة مضمونة. تتغير التغطية والتكلفة بحسب بيانات المركبة والسائق، ونطاق التغطية، وأي متطلبات نظامية أو معلومات إضافية مطلوبة قبل الإتمام."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما البيانات التي تطلبونها عبر الموقع؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نطلب الحد الأدنى من البيانات اللازمة لفهم الطلب مثل الاسم، وسيلة التواصل، نوع المركبة، المدينة، ونوع التغطية المطلوبة. لا نطلب عبر هذه الصفحات أرقام بطاقات الدفع أو أرقام الحسابات البنكية أو أي بيانات مالية حساسة."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف يتم إرسال الطلب من خلال النموذج؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "النموذج في هذه النسخة يجهز رسالة بريد إلكتروني بالبيانات التي أدخلتها حتى تراجعها وترسلها بنفسك إلى فريق الموقع. بهذه الطريقة لا تُخزن البيانات داخل الصفحة نفسها بشكل خفي، ويظل مسار الإرسال واضحًا للمستخدم."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل تبيعون بيانات المستخدمين أو تشاركونها دون إفصاح؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا. لا يتم بيع البيانات الشخصية. وأي مشاركة لازمة لتقديم الخدمة أو للامتثال النظامي يجب أن تكون ضمن الحدود اللازمة والمذكورة في سياسة الخصوصية، مع تجنب إدراج بيانات تعريفية حساسة في الروابط أو العناوين."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "هل أحتاج إلى دفع أي مبلغ داخل هذه الصفحة؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "لا يتم في هذه الصفحة تحصيل مبالغ أو طلب وسائل دفع. إذا وُجدت رسوم أو شروط نهائية مستقبلًا فيجب عرضها بوضوح قبل أي التزام من المستخدم."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ما نطاق الخدمة الجغرافي؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "المحتوى والخدمة موجهان لطلبات مرتبطة بتأمين السيارات داخل المملكة العربية السعودية. وإذا ظهرت قيود جغرافية أو تنظيمية خاصة بحالة معينة فيجب توضيحها للمستخدم قبل الإجراء النهائي."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "كيف أتواصل معكم بخصوص استفسار أو شكوى أو طلب متعلق بالخصوصية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "يمكن التواصل عبر البريد الإلكتروني info@zmduqlwu.elementor.cloud. كما تتضمن صفحات الموقع سياسة الخصوصية، والشروط والأحكام، وصفحة الإفصاح والشفافية لسهولة المراجعة والاعتماد."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://zmduqlwu.elementor.cloud/#vehicle-insurance-service",
+      "name": "تأمين السيارات وعروض أولية",
+      "provider": {
+        "@id": "https://zmduqlwu.elementor.cloud/#org"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "المملكة العربية السعودية"
+      },
+      "serviceType": "Vehicle Insurance",
+      "description": "خدمة معلومات وطلب تواصل مرتبطة بتأمين السيارات والتأمين ضد الغير والشامل داخل المملكة العربية السعودية."
+    }
+  ]
+}

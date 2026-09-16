@@ -1,0 +1,6 @@
+# Allow search engines to crawl the public site
+User-agent: *
+Allow: /
+
+# Public XML sitemap
+Sitemap: https://zmduqlwu.elementor.cloud/sitemap.xml
