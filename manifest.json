@@ -2,41 +2,26 @@
   "name": "حجز فحص المركبات اونلاين",
   "short_name": "فحص المركبات",
   "description": "خدمة حجز فحص المركبات المعتمدة في السعودية",
-  "start_url": "/",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2563eb",
   "orientation": "portrait-primary",
-  "categories": ["business", "automotive", "utilities"],
+  "categories": [
+    "business",
+    "automotive",
+    "utilities"
+  ],
   "lang": "ar",
   "dir": "rtl",
-  "scope": "/",
+  "scope": "./",
   "icons": [
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icon-512.png", 
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "src": "logo-sq.jpg",
+      "type": "image/jpeg",
+      "sizes": "200x187",
+      "purpose": "any"
     }
   ],
-  "screenshots": [
-    {
-      "src": "/screenshot-mobile.png",
-      "sizes": "540x720",
-      "type": "image/png",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "/screenshot-desktop.png",
-      "sizes": "1280x720", 
-      "type": "image/png",
-      "form_factor": "wide"
-    }
-  ]
+  "screenshots": []
 }

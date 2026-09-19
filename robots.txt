@@ -4,6 +4,3 @@ Allow: /privacy-policy.html
 Allow: /terms-of-service.html
 Allow: /about-us.html
 Allow: /faq.html
-
-# Sitemap
-Sitemap: https://dibjofer.click

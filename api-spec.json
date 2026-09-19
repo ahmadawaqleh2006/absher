@@ -5,14 +5,12 @@
     "description": "واجهة برمجة التطبيقات لخدمة حجز فحص المركبات",
     "version": "1.0.0",
     "contact": {
-      "name": "فريق الدعم",
-      "email": "info@dibjofer.click",
-      "url": "https://dibjofer.click"
+      "name": "فريق الدعم"
     }
   },
   "servers": [
     {
-      "url": "https://dibjofer.click",
+      "url": "/",
       "description": "خادم الإنتاج"
     }
   ],
@@ -50,7 +48,13 @@
     "schemas": {
       "Booking": {
         "type": "object",
-        "required": ["vehicleType", "date", "time", "customerName", "phone"],
+        "required": [
+          "vehicleType",
+          "date",
+          "time",
+          "customerName",
+          "phone"
+        ],
         "properties": {
           "vehicleType": {
             "type": "string",

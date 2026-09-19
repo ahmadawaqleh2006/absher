@@ -1,5 +1,1 @@
-Contact: mailto:info@dibjofer.click
-Contact: tel:+966500000000
-Expires: 2025-12-31T23:59:59.000Z
 Preferred-Languages: ar, en
-Canonical: https://dibjofer.click
