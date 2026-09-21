@@ -1,15 +1,21 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html dir="rtl" lang="ar">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>منصة تأمين السيارات</title>
-<style>
-        700&display=swap');
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>منصة تأمين السيارات</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
         body {
-            font-family: Tahoma,"Segoe UI",Arial,sans-serif;
+            font-family: Tahoma, "Segoe UI", Arial, sans-serif;
             background-color: #f5f7fa;
             margin: 0;
             display: flex;
@@ -17,13 +23,12 @@
             align-items: center;
             min-height: 100vh;
             padding: 20px;
-            box-sizing: border-box;
         }
 
         .container {
-            background-color: #fff;
+            background-color: #ffffff;
             border-radius: 20px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
             text-align: center;
             padding: 40px 30px;
             max-width: 600px;
@@ -50,23 +55,29 @@
             margin-bottom: 25px;
         }
 
-        /* تم تعديل التنسيق هنا ليتناسب مع الرابط أيضاً */
         .cta-button {
             background-color: #0056b3;
-            color: #fff;
+            color: #ffffff;
             border: none;
             padding: 15px 40px;
             font-size: 18px;
             border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            font-family: Tahoma,"Segoe UI",Arial,sans-serif;
-            text-decoration: none; /* إزالة الخط السفلي للرابط */
-            display: inline-block; /* لضمان ظهور الرابط ككتلة مثل الزر */
+            font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
         }
 
         .cta-button:hover {
             background-color: #004494;
+            color: #ffffff;
+        }
+
+        .cta-button:focus-visible {
+            outline: 3px solid #00b0ff;
+            outline-offset: 4px;
         }
 
         .bottom-text {
@@ -80,17 +91,88 @@
             color: #00b0ff;
             font-size: 30px;
         }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .cta-button {
+                font-size: 17px;
+                padding: 14px 35px;
+            }
+        }
     </style>
 </head>
+
 <body>
-<div class="container">
-<img alt="توضيح لمنصة تأمين السيارات" class="illustration" src="image_0.png"/>
-<button aria-disabled="true" class="cta-button" disabled="" title="صفحة الشراء غير موجودة ضمن ملفات هذا الموقع" type="button">اشتري الان</button>
-<h1>أول منصة لتأمين السيارات في السعودية</h1>
-<p>جميع وأفضل شركات التأمين... في مكان واحد. لمجموعة واسعة من الخيارات وإصدار فوري لوثائق التأمين</p>
-<button aria-disabled="true" class="cta-button" disabled="" title="صفحة الشراء غير موجودة ضمن ملفات هذا الموقع" type="button">ابدأ الآن</button>
-<p class="bottom-text">هل تود شراء سيارة وترغب في معرفة كل شيء عنها قبل الشراء؟</p>
-<svg class="verified-icon" height="40" viewbox="0 0 512 512" width="40"><path d="M512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256zm-156.9-73.3L192 331.7 117.9 257.6c-6.4-6.4-16.7-6.4-23 0-6.4 6.4-6.4 16.7 0 23l96.6 96.6c6.4 6.4 16.7 6.4 23 0l184.6-184.6c6.4-6.4 6.4-16.7 0-23-6.4-6.4-16.7-6.4-23 0z" fill="#00b0ff"></path></svg>
-</div>
+
+    <div class="container">
+
+        <!-- صورة المنصة -->
+        <img
+            src="image_0.png"
+            alt="توضيح لمنصة تأمين السيارات"
+            class="illustration"
+        >
+
+        <!-- زر اشتري الآن -->
+        <a
+            href="https://slgltxgv.elementor.cloud"
+            class="cta-button"
+        >
+            اشتري الآن
+        </a>
+
+        <!-- العنوان الرئيسي -->
+        <h1>
+            أول منصة لتأمين السيارات في السعودية
+        </h1>
+
+        <!-- وصف المنصة -->
+        <p>
+            جميع وأفضل شركات التأمين... في مكان واحد.
+            لمجموعة واسعة من الخيارات وإصدار فوري
+            لوثائق التأمين
+        </p>
+
+        <!-- زر ابدأ الآن -->
+        <a
+            href="https://slgltxgv.elementor.cloud"
+            class="cta-button"
+        >
+            ابدأ الآن
+        </a>
+
+        <!-- النص السفلي -->
+        <p class="bottom-text">
+            هل تود شراء سيارة وترغب في معرفة كل شيء عنها قبل الشراء؟
+        </p>
+
+        <!-- أيقونة التحقق -->
+        <svg
+            class="verified-icon"
+            height="40"
+            width="40"
+            viewBox="0 0 512 512"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                fill="#00b0ff"
+                d="M512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256zm-156.9-73.3L192 331.7 117.9 257.6c-6.4-6.4-16.7-6.4-23 0-6.4 6.4-6.4 16.7 0 23l96.6 96.6c6.4 6.4 16.7 6.4 23 0l184.6-184.6c6.4-6.4 6.4-16.7 0-23-6.4-6.4-16.7-6.4-23 0z"
+            />
+        </svg>
+
+    </div>
+
 </body>
 </html>
